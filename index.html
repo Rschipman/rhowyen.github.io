@@ -3,41 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rhowyen</title>
+  <title>Rhowyen </title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <main class="container">
-    <img src="avatar.png" alt="rhowyen avatar" class="avatar" />
+  <!-- Ambient Audio -->
+  <audio id="forest-audio" loop>
+    <source src="/audio/As You Prevent Do - pATCHES.mp3" type="audio/mpeg">
+  </audio>
 
-    <h1>rhowyen</h1>
-    <p class="tagline">Streamer • Content Creator • Chaotic Clown</p>
+  <button id="audio-toggle">🌲 ambience: off</button>
 
-    <section class="about">
-      <h2>About Me</h2>
-      <p>
-        Hey! I'm rhowyen — I stream games, vibes, and questionable decisions.
-        Expect chill chats, clownish moments, and a welcoming community.
-      </p>
-    </section>
+  <div class="page">
 
-    <section class="links">
-      <a href="https://www.twitch.tv/rhowyen" target="_blank">🎮 Twitch</a>
-      <a href="https://www.youtube.com/@rhowyen" target="_blank">▶️ YouTube</a>
-      <a href="https://discord.com/invite/rhowyen" target="_blank">💬 Discord</a>
-      <a href="https://twitter.com/rh0wyen" target="_blank">🐦 Twitter / X</a>
-    </section>
+    <!-- Profile -->
+    <aside class="profile box">
+      <img src="/pics/dripclown.webp" alt="Your avatar">
+      <h1>Your Name</h1>
+      <p>cozy chaotic forest gremlin streamer and part time clown🌿</p>
+      <p class="status" data-live="false">🌙 Offline</p>
+    </aside>
 
-    <section class="schedule">
-      <h2>Stream Schedule</h2>
-      <p>Live weekly<br />Afternoons/Evenings</p>
-    </section>
+    <!-- Main Content -->
+    <main class="content box">
 
-    <footer>
-      <p>© 2026 rhowyen</p>
-    </footer>
-  </main>
+      <div class="note">
+        ✨ Cozy stream tonight — bring tea & good vibes
+      </div>
 
+      <section class="about">
+        <button class="collapse-toggle">📜 About Me</button>
+        <div class="collapse-content">
+          <p>
+            Hi! I’m a cozy streamer who loves chill games,
+            late-night rambling, and forest vibes 🍄
+          </p>
+        </div>
+      </section>
+
+      <section class="links">
+        <h2>🌐 Find Me</h2>
+        <a href="#">Twitch</a>
+        <a href="#">YouTube</a>
+        <a href="#">Twitter</a>
+        <a href="#">Discord</a>
+      </section>
+
+      <section class="guestbook box">
+        <h2>🐸 Guestbook</h2>
+        <p><strong>LeafLover99:</strong> immaculate vibes</p>
+        <p><strong>MossWizard:</strong> this site healed me</p>
+      </section>
+
+    </main>
+
+    <!-- Schedule -->
+    <aside class="schedule box">
+      <h2>📅 Schedule</h2>
+      <!-- <ul>
+        <li>Mon — 8pm</li>
+        <li>Wed — 9pm</li>
+        <li>Sat — 6pm</li>
+      </ul> -->
+      <p><em>Timezone: EST</em></p>
+    </aside>
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
